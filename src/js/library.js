@@ -6,8 +6,6 @@ import watchedMovies from './watchedMovies';
 import queueMovies from './queueMovies';
 import Pagination from 'tui-pagination';
 
-
-
 const containerWatched = document.getElementById('pagination__watched');
 const containerQueue = document.getElementById('pagination__queue');
 
@@ -16,23 +14,20 @@ export let newWatchedArray = [];
 export let newQueueArray = [];
 
 // Пагинация дла Watched
- export const paginationWatched = new Pagination(containerWatched, {
+export const paginationWatched = new Pagination(containerWatched, {
   itemsPerPage: 9,
   page: 1,
- });
+});
 
- // Пагинация дла Queue
- export const paginationQueue = new Pagination(containerQueue, {
+// Пагинация дла Queue
+export const paginationQueue = new Pagination(containerQueue, {
   itemsPerPage: 9,
   page: 1,
- });
-
+});
 
 // ======== получить список фильмов из localStorsge ===========
 export let watchedArray = getMoviesFromLocalStorage('watched');
 export let queueArray = getMoviesFromLocalStorage('queue');
-
-
 
 // ============================================================================================
 // ========================================  L I B R A R Y  ===================================
@@ -136,26 +131,25 @@ paginationWatched.reset(watchedArray.length);
 paginationQueue.reset(queueArray.length);
 
 // Разбивка для Watched
-
-for (let i = 0; i <Math.ceil(watchedArray.length/size); i++){ 
-    newWatchedArray[i] = watchedArray.slice((i*size), (i*size) + size); 
+let size = 9;
+export let newWatchedArray = [];
+for (let i = 0; i < Math.ceil(watchedArray.length / size); i++) {
+  newWatchedArray[i] = watchedArray.slice(i * size, i * size + size);
 }
 
 // Разбивка для Queue
-
-for (let i = 0; i <Math.ceil(queueArray.length/size); i++){ 
-    newQueueArray[i] = queueArray.slice((i*size), (i*size) + size); 
+export let newQueueArray = [];
+for (let i = 0; i < Math.ceil(queueArray.length / size); i++) {
+  newQueueArray[i] = queueArray.slice(i * size, i * size + size);
 }
-
 
 paginationWatched.on('afterMove', onPaginationWatchedClick);
 
 function onPaginationWatchedClick(event) {
 window.scrollTo(0, 0);
   const currentWatchedPage = event.page;
-  watchedMovies(newWatchedArray[currentWatchedPage-1])
-modalWindow();
-  
+  watchedMovies(newWatchedArray[currentWatchedPage - 1]);
+  modalWindow();
 }
 
 paginationQueue.on('afterMove', onPaginationQueueClick);
@@ -164,7 +158,6 @@ function onPaginationQueueClick(event) {
   window.scrollTo(0, 0);
 
   const currentQueuePage = event.page;
-  queueMovies(newQueueArray[currentQueuePage-1])
- modalWindow();
-  
+  queueMovies(newQueueArray[currentQueuePage - 1]);
+  modalWindow();
 }
