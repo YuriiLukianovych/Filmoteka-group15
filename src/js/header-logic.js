@@ -1,5 +1,5 @@
-import watchedMovies from './watchedMovies';
-import queueMovies from './queueMovies';
+import watchedMovies from './watched-movies';
+import queueMovies from './queue-movies';
 import modalWindow from './modal-window';
 import { newWatchedArray, newQueueArray, paginationWatched, paginationQueue } from './library';
 
