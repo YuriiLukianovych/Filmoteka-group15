@@ -102,4 +102,4 @@ const e=document.getElementById("myModal"),o=document.getElementById("footerBtn"
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/header-logic"),require("./js/library"),require("./js/main-page"),require("./js/pagination"),require("./js/featch-movie"),require("./js/modal-window"),require("./js/scroll-top"),require("./js/loader"),require("./js//footer");
 },{"./sass/main.scss":"clu1","./js/header-logic":"h3xw","./js/library":"BfNj","./js/main-page":"nNu6","./js/pagination":"o8lo","./js/featch-movie":"fwtU","./js/modal-window":"WcsN","./js/scroll-top":"dqHX","./js/loader":"vQE2","./js//footer":"b5Ik"}]},{},["Focm"], null)
-//# sourceMappingURL=/filmoteka-group15/src.969c8dfc.js.map
+//# sourceMappingURL=/filmoteka-group15/src.06f5bbfd.js.map
