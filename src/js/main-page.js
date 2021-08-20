@@ -55,7 +55,7 @@ function moviePoster(movies) {
   if (movies.poster_path) {
     posterAlt = `https://image.tmdb.org/t/p/original${movies.poster_path}`;
   } else {
-    posterAlt = 'images/plug.jpg';
+    posterAlt = 'https://cdn.pixabay.com/photo/2013/07/12/13/58/camera-147680_960_720.png';
   }
   return posterAlt;
 }
