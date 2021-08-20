@@ -1,4 +1,3 @@
-import getMoviesFromLocalStorage from './getMoviesListFromLocalStorage';
 import { watchedArray, queueArray } from './library';
 
 // при клике по карточке фильма, проверяет, есть ли этот фильм в библиотеке

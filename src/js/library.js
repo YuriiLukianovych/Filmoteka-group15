@@ -1,9 +1,8 @@
-import movieTemplate from '../templates/movie-card.hbs';
 import modalWindow from './modal-window';
-import getMoviesFromLocalStorage from './getMoviesListFromLocalStorage';
-import { buttonValues } from './modalButtonsValues';
-import watchedMovies from './watchedMovies';
-import queueMovies from './queueMovies';
+import getMoviesFromLocalStorage from './movies-from-local';
+import { buttonValues } from './modal-buttons-values';
+import watchedMovies from './watched-movies';
+import queueMovies from './queue-movies';
 import Pagination from 'tui-pagination';
 
 const containerWatched = document.getElementById('pagination__watched');

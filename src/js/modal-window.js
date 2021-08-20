@@ -1,7 +1,7 @@
 import modalTemplate from '../templates/modal-card.hbs';
 import { myMovieLibrary } from './library';
-import { libraryWatchedCheck, libraryQueueCheck } from './libraryCheck';
-import { buttonValues } from './modalButtonsValues';
+import { libraryWatchedCheck, libraryQueueCheck } from './library-check';
+import { buttonValues } from './modal-buttons-values';
 
 const axios = require('axios').default;
 

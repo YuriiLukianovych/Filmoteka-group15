@@ -60,6 +60,7 @@
   border: none;
   background-color: #f7f7f7;
   cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 #footerBtn:hover,
 #footerBtn:focus {
@@ -119,7 +120,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.5s;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     cursor: pointer;
     box-shadow: 0 0 2px 1px #000;
@@ -176,6 +177,7 @@
   justify-content: center;
   border-radius: 8px;
   color: #454545;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-cell:hover .team-cell-top {
   transform: scale(1.01);
@@ -190,10 +192,12 @@
   border-radius: 50%;
   margin-bottom: 15px;
   overflow: hidden;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-cell-name {
   text-align: center;
   text-decoration: none;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-cell-name:hover {
   color: #ff6b08;
