@@ -1,7 +1,7 @@
 #scrollTop {
   position: fixed;
-  top: 1px;
-  // right: 20px;
+  bottom: 80px;
+  right: 30px;
   font-size: 40px;
   z-index: 99;
   color: #ff6b01;
@@ -14,18 +14,5 @@
 
   &_show {
     opacity: 0;
-  }
-}
-.scroll-container {
-  position: relative;
-  background-color: red;
-  height: 50px;
-  margin: 0 auto;
-  width: 320px;
-  @media screen and(min-width: 768px) and (max-width: 1023px) {
-    width: 768px;
-  }
-  @media screen and(min-width: 1024px) {
-    width: 1024px;
   }
 }
