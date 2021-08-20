@@ -167,8 +167,7 @@ function getMovieObject(movieFromBackend) {
     if (movies.poster_path) {
       posterAlt = `https://image.tmdb.org/t/p/original${movies.poster_path}`;
     } else {
-      posterAlt =
-        'https://lh3.googleusercontent.com/proxy/JSkfV3nWf1GRKPX0AqB1CcpRxA8i7Izz6OPx4raPggPeiNi4vbVkHHC-9IwgfAKOKl_UGlHnp4iIfDiXArX-1wX2b18ukwp576M2253sDtEIFYt6qpCLZTFSMqweZd-pcpMUhfw';
+      posterAlt = 'images/plug.jpg';
     }
     return posterAlt;
   }
