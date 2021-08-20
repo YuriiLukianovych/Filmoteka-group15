@@ -7,3 +7,4 @@ import './js/featch-movie';
 import './js/modal-window';
 import './js/scroll-top';
 import './js/loader';
+import './js//footer';
